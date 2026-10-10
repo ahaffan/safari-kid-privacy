@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permintaan Penghapusan Data & Akun / Account & Data Deletion — Safari Kid | Arkananta Horizon</title>
+  <meta name="description" content="Halaman resmi permintaan dan prosedur penghapusan akun serta data pengguna aplikasi Safari Kid (Arkananta Horizon) sesuai Google Play Data Deletion Policy.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #C62828;
+      --primary-light: #FFEBEE;
+      --primary-dark: #B71C1C;
+      --accent: #2E7D32;
+      --accent-light: #E8F5E9;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #E2E8F0;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #B71C1C 0%, #C62828 60%, #E53935 100%);
+      color: #FFFFFF;
+      padding: 40px 32px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "🗑️ 🛡️ 🔒";
+      position: absolute;
+      right: 24px;
+      bottom: 16px;
+      font-size: 38px;
+      opacity: 0.3;
+    }
+
+    .badge-dev {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      opacity: 0.92;
+      margin-bottom: 16px;
+      max-width: 650px;
+    }
+
+    .meta-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      background: var(--card-bg);
+      padding: 6px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .lang-btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background-color: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 32px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-top: 28px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .step-box {
+      background-color: #FFF8E1;
+      border-left: 4px solid #FFA000;
+      padding: 16px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 16px 0;
+    }
+
+    .callout {
+      background-color: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    .callout-success {
+      background-color: var(--accent-light);
+      border-left: 4px solid var(--accent);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background-color: #F1F5F9;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    tr:hover {
+      background-color: #F8FAFC;
+    }
+
+    .contact-box {
+      background: linear-gradient(to right, #FFEBEE, #FFCDD2);
+      border: 1px solid #EF9A9A;
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+
+    .btn-action {
+      display: inline-block;
+      background-color: var(--primary);
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .btn-action:hover {
+      background-color: var(--primary-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 0 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 12px 8px;
+      }
+      header {
+        padding: 24px 20px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      .card {
+        padding: 20px 16px;
+      }
+      table, th, td {
+        font-size: 0.82rem;
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="badge-dev">🛡️ Arkananta Horizon • Data Deletion Policy</div>
+    <h1>Penghapusan Data & Akun Pengguna</h1>
+    <div class="subtitle">Aplikasi Safari Kid — Ketentuan & Tata Cara Penghapusan Data Sesuai Google Play Policy</div>
+    <div class="meta-tags">
+      <span class="tag">🔒 Google Play Data Deletion Compliant</span>
+      <span class="tag">🗑️ Penghapusan Instan On-Device</span>
+      <span class="tag">🛡️ Zero Data Retention</span>
+      <span class="tag">🇮🇩 Kepatuhan UU PDP No. 27/2022</span>
+    </div>
+  </header>
+
+  <nav class="lang-switcher">
+    <a href="#id" class="lang-btn active" onclick="switchLang('id', event)">🇮🇩 Bahasa Indonesia</a>
+    <a href="#en" class="lang-btn" onclick="switchLang('en', event)">🇬🇧 English</a>
+  </nav>
+
+  <!-- BAHASA INDONESIA -->
+  <main id="content-id" class="card">
+    <div class="callout callout-success">
+      <strong>Komitmen Privasi Arkananta Horizon:</strong><br>
+      Aplikasi <strong>Safari Kid</strong> (Package: <code>com.arkanantahorizon.safarikid</code>) menghormati hak privasi Anda sepenuhnya. Pengguna berhak meminta dan mengeksekusi penghapusan akun serta seluruh data yang terkait kapan saja, tanpa syarat yang memberatkan.
+    </div>
+
+    <h2>1. 📱 Cara Menghapus Akun & Data Anda</h2>
+    <p>Anda dapat menghapus akun dan data pribadi anak Anda melalui salah satu metode berikut:</p>
+
+    <div class="step-box">
+      <h3>Metode 1: Langsung di Dalam Aplikasi (Paling Cepat & Seketika)</h3>
+      <ol>
+        <li>Buka aplikasi <strong>Safari Kid</strong> di ponsel Android Anda.</li>
+        <li>Buka menu <strong>Pengaturan (Settings / Akun)</strong> di bilah navigasi bawah.</li>
+        <li>Gulir ke bawah hingga bagian <strong>"Data & Privasi"</strong>.</li>
+        <li>Ketuk tombol <strong>"Hapus Semua Data / Reset Data"</strong>.</li>
+        <li>Konfirmasikan dialog peringatan dengan menekan <strong>"Ya, Hapus Permanen"</strong>.</li>
+        <li>Seluruh profil anak, riwayat kurva pertumbuhan Z-score, dan foto scrapbook akan langsung terhapus seketika dari penyimpanan lokal perangkat Anda.</li>
+      </ol>
+    </div>
+
+    <div class="step-box">
+      <h3>Metode 2: Melalui Pengaturan Sistem Android</h3>
+      <ol>
+        <li>Buka <strong>Pengaturan (Settings)</strong> perangkat Android Anda.</li>
+        <li>Pilih <strong>Aplikasi (Apps / Application Manager)</strong> > Cari dan pilih <strong>Safari Kid</strong>.</li>
+        <li>Pilih <strong>Penyimpanan (Storage & Cache)</strong>.</li>
+        <li>Ketuk <strong>Hapus Penyimpanan (Clear Storage / Clear Data)</strong>.</li>
+        <li>Semua data lokal aplikasi akan langsung terhapus bersih dari ponsel Anda.</li>
+      </ol>
+    </div>
+
+    <div class="step-box">
+      <h3>Metode 3: Permintaan Penghapusan Manual Melalui Email Pengembang</h3>
+      <p>Jika Anda telah menghapus aplikasi dan ingin memastikan tidak ada data atau sesi akun tertinggal, Anda dapat mengirimkan permintaan penghapusan tertulis kepada tim pengembang kami:</p>
+      <ul>
+        <li><strong>Email Tujuan:</strong> <a href="mailto:affan@arkananta.id">affan@arkananta.id</a> atau <a href="mailto:support@arkananta.id">support@arkananta.id</a></li>
+        <li><strong>Subjek Email:</strong> <code>Permintaan Penghapusan Data Safari Kid - [Nama / Alamat Email Anda]</code></li>
+        <li><strong>Informasi yang Disertakan:</strong> Alamat email yang digunakan saat masuk atau Kode Unik Pengguna (misal: <code>GTK-USR-XXXXX</code> jika Anda mengingatnya).</li>
+        <li><strong>Waktu Pemrosesan:</strong> Tim Arkananta Horizon akan memverifikasi dan menyelesaikan permohonan dalam waktu <strong>1 x 24 jam kerja</strong> dan mengirimkan konfirmasi tertulis.</li>
+      </ul>
+      <a href="mailto:affan@arkananta.id?subject=Permintaan%20Penghapusan%20Data%20Safari%20Kid" class="btn-action">📧 Kirim Email Permintaan Penghapusan</a>
+    </div>
+
+    <h2>2. 📊 Jenis Data yang Dihapus</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Kategori Data</th>
+          <th>Rincian Data</th>
+          <th>Tindakan Penghapusan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Data Profil Anak</strong></td>
+          <td>Nama panggilan/inisial, tanggal lahir, jenis kelamin.</td>
+          <td>Dihapus permanen dari database lokal Room SQLite.</td>
+        </tr>
+        <tr>
+          <td><strong>Data Antropometri Medis</strong></td>
+          <td>Riwayat berat badan, tinggi badan, lingkar kepala, dan perhitungan kurva Z-Score WHO.</td>
+          <td>Dihapus permanen seketika.</td>
+        </tr>
+        <tr>
+          <td><strong>Foto & Scrapbook</strong></td>
+          <td>Foto kenangan milestone balita yang dipilih via Android Photo Picker.</td>
+          <td>Dihapus permanen dari direktori internal aplikasi.</td>
+        </tr>
+        <tr>
+          <td><strong>Kredensial Akun Orang Tua</strong></td>
+          <td>Alamat email, nama orang tua, hash kata sandi terenkripsi, status sesi login SharedPreferences.</td>
+          <td>Dibersihkan secara total (sesi di-logout permanen).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. ⏱️ Kebijakan Penyimpanan (Data Retention Period)</h2>
+    <div class="callout">
+      <strong>Zero-Cloud Guarantee & Tidak Ada Data yang Ditahan:</strong><br>
+      Karena Safari Kid memprioritaskan privasi keluarga dan memproses data secara lokal (*on-device privacy*), kami <strong>TIDAK MENYIMPAN ATAU MENAHAN</strong> salinan data pribadi, data medis balita, atau foto Anda di server eksternal setelah Anda menjalankan perintah hapus. Tidak ada periode retensi tersembunyi.
+    </div>
+
+    <div class="contact-box">
+      <h3 style="margin-top: 0; color: #B71C1C;">📬 Kontak Layanan Privasi Pengembang</h3>
+      <p style="margin-bottom: 4px;"><strong>Entitas Pengembang:</strong> Arkananta Horizon</p>
+      <p style="margin-bottom: 4px;"><strong>Email:</strong> <a href="mailto:affan@arkananta.id">affan@arkananta.id</a> / <a href="mailto:support@arkananta.id">support@arkananta.id</a></p>
+      <p style="margin-bottom: 4px;"><strong>Kebijakan Privasi Lengkap:</strong> <a href="https://ahaffan.github.io/safari-kid-privacy/">https://ahaffan.github.io/safari-kid-privacy/</a></p>
+      <p style="margin-bottom: 0;"><strong>Terakhir Diperbarui:</strong> 10 Oktober 2026</p>
+    </div>
+  </main>
+
+  <!-- ENGLISH -->
+  <main id="content-en" class="card" style="display: none;">
+    <div class="callout callout-success">
+      <strong>Arkananta Horizon Privacy Commitment:</strong><br>
+      The application <strong>Safari Kid</strong> (Package: <code>com.arkanantahorizon.safarikid</code>) strictly respects your privacy rights. Users can request and perform account and data deletion at any time without unnecessary barriers.
+    </div>
+
+    <h2>1. 📱 How to Delete Your Account & Associated Data</h2>
+    <p>You can delete your account and child growth records through any of the following methods:</p>
+
+    <div class="step-box">
+      <h3>Method 1: Directly In-App (Instant & Real-Time)</h3>
+      <ol>
+        <li>Open the <strong>Safari Kid</strong> application on your Android device.</li>
+        <li>Navigate to the <strong>Settings (Account)</strong> screen in the bottom navigation bar.</li>
+        <li>Scroll down to the <strong>"Data & Privacy"</strong> section.</li>
+        <li>Tap the <strong>"Reset All Data / Delete Account"</strong> button.</li>
+        <li>Confirm the dialog prompt by tapping <strong>"Yes, Delete Permanently"</strong>.</li>
+        <li>All child profiles, WHO Z-score growth curves, and scrapbook photos will be permanently wiped immediately from your local device storage.</li>
+      </ol>
+    </div>
+
+    <div class="step-box">
+      <h3>Method 2: Via Android System Settings</h3>
+      <ol>
+        <li>Open Android <strong>Settings</strong> on your device.</li>
+        <li>Select <strong>Apps</strong> > Find and tap <strong>Safari Kid</strong>.</li>
+        <li>Select <strong>Storage & Cache</strong>.</li>
+        <li>Tap <strong>Clear Storage (Clear Data)</strong>.</li>
+        <li>All application files and databases will be completely erased from your phone.</li>
+      </ol>
+    </div>
+
+    <div class="step-box">
+      <h3>Method 3: Written Request via Developer Email</h3>
+      <p>If you have uninstalled the app and wish to formally ensure zero metadata remains, submit a request directly to our developer desk:</p>
+      <ul>
+        <li><strong>Recipient:</strong> <a href="mailto:affan@arkananta.id">affan@arkananta.id</a> or <a href="mailto:support@arkananta.id">support@arkananta.id</a></li>
+        <li><strong>Email Subject:</strong> <code>Safari Kid Data Deletion Request - [Your Name / Email]</code></li>
+        <li><strong>Required Information:</strong> The email address used during login or your Unique User Code (e.g. <code>GTK-USR-XXXXX</code>).</li>
+        <li><strong>Resolution Timeframe:</strong> Requests are processed within <strong>24 business hours</strong> followed by written confirmation.</li>
+      </ul>
+      <a href="mailto:affan@arkananta.id?subject=Safari%20Kid%20Data%20Deletion%20Request" class="btn-action">📧 Submit Data Deletion Request</a>
+    </div>
+
+    <h2>2. 📊 Scope of Deleted Data</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Data Category</th>
+          <th>Details</th>
+          <th>Deletion Outcome</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Child Profile Data</strong></td>
+          <td>Child nickname/initials, date of birth, gender.</td>
+          <td>Permanently destroyed from local Room SQLite database.</td>
+        </tr>
+        <tr>
+          <td><strong>Growth & Medical Records</strong></td>
+          <td>Weight, height, head circumference logs, and WHO Z-score metrics.</td>
+          <td>Permanently wiped instantly.</td>
+        </tr>
+        <tr>
+          <td><strong>Milestone Photographs</strong></td>
+          <td>Scrapbook images selected via Android Photo Picker.</td>
+          <td>Permanently deleted from sandboxed app storage.</td>
+        </tr>
+        <tr>
+          <td><strong>Parent Account Credentials</strong></td>
+          <td>Email address, parent display name, salted password hash, persistent login session.</td>
+          <td>Completely cleared (User logged out permanently).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. ⏱️ Data Retention & Zero Retention Guarantee</h2>
+    <div class="callout">
+      <strong>Zero-Cloud Retention:</strong><br>
+      Because Safari Kid is built with strict on-device privacy principles, we <strong>DO NOT RETAIN</strong> any copies of your child’s health records, photos, or credentials on external cloud servers after deletion. Once executed, deletion is instantaneous and irreversible.
+    </div>
+
+    <div class="contact-box">
+      <h3 style="margin-top: 0; color: #B71C1C;">📬 Official Privacy Desk Contact</h3>
+      <p style="margin-bottom: 4px;"><strong>Developer Organization:</strong> Arkananta Horizon</p>
+      <p style="margin-bottom: 4px;"><strong>Email:</strong> <a href="mailto:affan@arkananta.id">affan@arkananta.id</a> / <a href="mailto:support@arkananta.id">support@arkananta.id</a></p>
+      <p style="margin-bottom: 4px;"><strong>Full Privacy Policy:</strong> <a href="https://ahaffan.github.io/safari-kid-privacy/">https://ahaffan.github.io/safari-kid-privacy/</a></p>
+      <p style="margin-bottom: 0;"><strong>Last Updated:</strong> October 10, 2026</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 <strong>Arkananta Horizon</strong>. All rights reserved.</p>
+    <p>Official compliance page for <a href="https://ahaffan.github.io/safari-kid-privacy/">Safari Kid</a> on Google Play Store.</p>
+  </footer>
+</div>
+
+<script>
+  function switchLang(lang, ev) {
+    if (ev) ev.preventDefault();
+    const btnId = document.querySelectorAll('.lang-btn');
+    btnId.forEach(b => b.classList.remove('active'));
+    
+    if (lang === 'id') {
+      document.getElementById('content-id').style.display = 'block';
+      document.getElementById('content-en').style.display = 'none';
+      btnId[0].classList.add('active');
+    } else {
+      document.getElementById('content-id').style.display = 'none';
+      document.getElementById('content-en').style.display = 'block';
+      btnId[1].classList.add('active');
+    }
+  }
+
+  if (window.location.hash === '#en') {
+    switchLang('en');
+  }
+</script>
+
+</body>
+</html>
